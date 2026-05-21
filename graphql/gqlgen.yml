@@ -1,0 +1,17 @@
+schema: schema.graphql
+
+# # 1. Direct the generated execution code to 'gen/generated.go'
+# exec:
+#   filename: gen/generated.go
+#   package: gen
+# # 2. Direct the generated model structures to 'gen/models_gen.go'
+# model:
+#   filename: gen/models_gen.go
+#   package: gen
+
+models:
+  Account:
+    model: github.com/sharamatanikesh/ecom-microservice/graphql.Account
+    fields:
+      orders:
+        resolver: true
